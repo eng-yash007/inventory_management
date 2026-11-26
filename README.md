@@ -130,6 +130,12 @@ npm run dev
 ```
 Frontend starts on `http://localhost:5173`.
 
+### Default Demo Login
+
+On first startup with an empty `user` table, `DataSeeder` automatically creates a demo **ADMIN** account:
+- **Email:** `admin@stockpulse.com`
+- **Password:** `Admin@123`
+
 ---
 
 ## 🧪 Running Frontend Tests & Build
