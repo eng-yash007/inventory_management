@@ -34,6 +34,8 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-inventory_management_system}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: ${MYSQL_USER:-ims_user}
       SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:-ims_password}
+      SPRING_FLYWAY_ENABLED: ${SPRING_FLYWAY_ENABLED:-false}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: ${SPRING_JPA_HIBERNATE_DDL_AUTO:-update}
       JWT_SECRET: ${JWT_SECRET:-change-me-in-production-use-a-long-secret-key}
       JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-86400000}
       MAIL_HOST: ${MAIL_HOST:-}
